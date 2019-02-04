@@ -15,6 +15,7 @@ const putPlanetOnDom = (planetArray) => {
         `
     });
 }
+putPlanetOnDom(planets)
 
 /*
     Use the map method to create a new array where the
@@ -23,6 +24,20 @@ const putPlanetOnDom = (planetArray) => {
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
+const planetE2 = document.getElementById("capitalizedPlanets")
+
+const capitalize = (planetArray) => {
+    planetE2.innerHTML =""
+    planets.map(planetArray[0].toUpperCase() + planetArray.substring(0, 1))
+    planets.map(
+    planetE2.innerHTML +=  `
+    <p>${planets}<p>
+    `
+
+    )}   
+
+    
+capitalize(planets)  
 
 
 /*
